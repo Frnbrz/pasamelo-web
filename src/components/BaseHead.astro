@@ -1,0 +1,44 @@
+---
+import "../styles/main.scss"
+const { title } = Astro.props
+---
+
+<head>
+	<!-- Basic -->
+	<title>{title}</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- SEO -->
+	<meta name="description" content="Astro description" />
+	<meta name="author" content="Astro" />
+	<meta name="keywords" content="Astro, Astro Framework, Astro Meta Tags" />
+	<meta name="robots" content="index, follow" />
+
+	<!-- RSS -->
+	<meta property="og:title" content="Astro" />
+	<meta property="og:description" content="Astro description" />
+	<meta property="og:image" content="https://astro.build/logo.svg" />
+	<meta property="og:url" content="https://astro.build" />
+
+	<!-- Twitter -->
+	<meta property="twitter:title" content="Astro" />
+	<meta property="twitter:description" content="Astro description" />
+	<meta property="twitter:image" content="https://astro.build/logo.svg" />
+	<meta property="twitter:url" content="https://astro.build" />
+
+	<!-- Resources and links -->
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+	<!-- Security -->
+	<meta
+		http-equiv="Content-Security-Policy"
+		content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'self'; media-src 'self'; object-src 'self'; frame-src 'self'; base-uri 'self'; form-action 'self'; manifest-src 'self'; worker-src 'self'; frame-ancestors 'self';"
+	/>
+
+	<!-- Prefetching -->
+	<link rel="preconnect" href="https://example.com" />
+	<link rel="dns-prefetch" href="https://example.com" />
+
+	<meta name="generator" content={Astro.generator} />
+</head>
