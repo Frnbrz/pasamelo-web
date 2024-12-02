@@ -1,0 +1,17 @@
+.app--container {
+	display: grid;
+	grid-template-rows: 100px 1fr 50px;
+	grid-template-areas:
+		"header"
+		"main"
+		"footer";
+	height: 100vh;
+}
+
+main {
+	grid-area: main;
+}
+
+footer {
+	grid-area: footer;
+}

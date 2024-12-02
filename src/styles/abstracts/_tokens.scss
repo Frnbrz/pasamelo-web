@@ -18,19 +18,19 @@ $border-radius-1: $size-2;
 $border-radius-2: $size-4;
 
 $box-shadow-1: 0px 6px 5px rgb(0, 0, 0, 0.012),
-  0px 22px 18px rgb(0, 0, 0, 0.018), 0px 100px 80px rgb(0, 0, 0, 0.03);
+	0px 22px 18px rgb(0, 0, 0, 0.018), 0px 100px 80px rgb(0, 0, 0, 0.03);
 
 $box-shadow-2: 0px 6px 5px rgb(0, 0, 0, 0.016),
-  0px 22px 18px rgb(0, 0, 0, 0.024), 0px 100px 80px rgb(0, 0, 0, 0.04);
+	0px 22px 18px rgb(0, 0, 0, 0.024), 0px 100px 80px rgb(0, 0, 0, 0.04);
 
 $box-shadow-3: 0px 6px 5px rgb(0, 0, 0, 0.02), 0px 22px 18px rgb(0, 0, 0, 0.03),
-  0px 100px 80px rgb(0, 0, 0, 0.05);
+	0px 100px 80px rgb(0, 0, 0, 0.05);
 
 $box-shadow-4: 0px 6px 5px rgb(0, 0, 0, 0.03), 0px 22px 18px rgb(0, 0, 0, 0.042),
-  0px 100px 80px rgb(0, 0, 0, 0.07);
+	0px 100px 80px rgb(0, 0, 0, 0.07);
 
 $box-shadow-5: 0px 6px 5px rgb(0, 0, 0, 0.04), 0px 22px 18px rgb(0, 0, 0, 0.06),
-  0px 100px 80px rgb(0, 0, 0, 0.1);
+	0px 100px 80px rgb(0, 0, 0, 0.1);
 
 // body
 $body-font-family: $font-family-base;
@@ -106,7 +106,7 @@ $footer-link-text-decoration: none;
 
 // buttons
 $button-font-family: $body-font-family;
-$button-font-size: $font-size-400;
+$button-font-size: $font-size-200;
 $button-font-weight: $font-weight-bold;
 $button-text-transform: uppercase;
 $button-padding: 0.75em 2em;
@@ -118,9 +118,24 @@ $button-accent-background: $color-accent-400;
 $button-accent-color-hover: $color-neutral-100;
 $button-accent-background-hover: $color-accent-500;
 $button-primary-color: $color-neutral-100;
-$button-primary-background: $color-primary-700;
+$button-primary-background: $color-primary-300;
 $button-primary-color-hover: $color-neutral-100;
 $button-primary-background-hover: $color-primary-800;
+$button-outline-border: 2px solid $color-primary-300;
+$button-outline-color: $color-primary-300;
+$button-outline-color-hover: $color-neutral-100;
+$button-outline-background-hover: $color-primary-300;
+$button-focus-color: $color-primary-300;
+
+$button-primary-background: $color-primary-300;
+$button-primary-color: $color-neutral-000;
+$button-primary-background-hover: $color-primary-200;
+$button-primary-color-hover: $color-neutral-1000;
+
+$button-outline-border: 1px solid $color-primary-300;
+$button-outline-color: $color-primary-300;
+$button-outline-background-hover: $color-primary-200;
+$button-outline-color-hover: $color-primary-300;
 
 // cards
 $card-flow-spacing: $size-2;
