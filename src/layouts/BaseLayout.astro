@@ -1,6 +1,5 @@
 ---
 import BaseHead from "@/components/BaseHead.astro"
-import Cookies from "@/components/Cookies.astro"
 import SiteFooter from "@/components/SiteFooter.astro"
 import SiteHeader from "@/components/SiteHeader.astro"
 import "@/styles/main.scss"
@@ -11,7 +10,6 @@ const { title } = Astro.props
 <html lang="en">
 	<BaseHead {title} />
 	<body>
-		<Cookies />
 		<div class="app--container">
 			<SiteHeader />
 			<main id="main">
