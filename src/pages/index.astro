@@ -12,16 +12,49 @@ import Layout from "@/layouts/BaseLayout.astro"
 		<h6 class="heading-6">Sub-sub-sub-sub-subtitle</h6>
 
 		<div class="card">
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-				doloribus harum quam adipisci rerum. Illo, optio quis odio blanditiis,
-				aut nostrum ipsum hic vel, vero quasi quidem aliquid! Perferendis, sit.
-			</p>
+			<h3 class="card__heading">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+			</h3>
+			<main class="card__content">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+					doloremque delectus blanditiis, dolor ad veniam vero asperiores, modi
+					dolores reprehenderit labore quasi expedita voluptatibus fugiat
+					adipisci a harum omnis natus.
+				</p>
+			</main>
+			<div class="card__footer">
+				<button class="button" data-type="primary"> share </button>
+				<button class="button" data-type="accent"> like </button>
+			</div>
+		</div>
+
+		<form action="/" class="contact-form">
+			<div class="form-group">
+				<label for="name"></label>
+				<input type="text" id="name" name="name" placeholder="Name" />
+			</div>
+
+			<div class="form-group">
+				<label for="email"></label>
+				<input type="email" id="email" name="email" placeholder="Email" />
+			</div>
 
 			<footer>
-				<button class="button" data-type="primary">hola</button>
+				<button class="button" data-type="primary"> aceptar</button>
+				<button class="button" data-type="outline"> deny</button>
 			</footer>
-		</div>
+		</form>
+
+		<nav aria-label="primary navigation">
+			<ul class="nav | flex-group">
+				<li><a href="/">Home</a></li>
+				<li><a href="/">Page 3</a></li>
+				<li><a href="/" class="skip-navigation">Page 4</a></li>
+				<li><a href="/">Page 2</a></li>
+			</ul>
+		</nav>
+
 		<p>
 			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum nulla
 			repellendus dolore quam quas? Nisi eaque veniam dolorem enim. Odit
