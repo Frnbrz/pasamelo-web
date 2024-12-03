@@ -1,7 +1,38 @@
-#alert-dialog::backdrop {
-  background: linear-gradient(#000d, #000a);
-}
+@use "../abstracts" as *;
 
-#cookies-dialog::backdrop {
-  background: rgba(0 0 0 / 0.75);
+dialog {
+	position: fixed;
+	inset: 0;
+	z-index: 50;
+	padding: 1rem;
+	width: 100%;
+	max-width: 30rem;
+	margin: 0 auto;
+
+	p {
+		margin: 0;
+		padding-bottom: $size-4;
+	}
+
+	footer {
+		display: flex;
+		justify-content: center;
+		gap: $size-4;
+	}
+
+	&::backdrop {
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	&[open] {
+		animation: fade 3.3s ease-in-out forwards;
+	}
+
+	&[closing] {
+		animation: fade 3.3s ease-in-out reverse;
+	}
+
+	&[closing]::backdrop {
+		animation: fade 3.3s ease-in-out reverse;
+	}
 }
