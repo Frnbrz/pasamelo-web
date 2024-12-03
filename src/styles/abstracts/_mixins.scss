@@ -33,3 +33,15 @@
 	font-weight: $heading-font-weight;
 	line-height: $heading-line-height;
 }
+
+@mixin body($fs, $color: $body-color-default) {
+	font-size: $fs;
+	color: $color;
+	line-height: $body-line-height;
+}
+
+@mixin footer($fs: $footer-font-size, $color: $footer-color-default) {
+	font-size: $fs;
+	color: $color;
+	line-height: $body-line-height;
+}
