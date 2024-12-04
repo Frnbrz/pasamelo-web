@@ -35,6 +35,13 @@ const landingNav = [
 			{ title: "Día del padre", href: "" },
 		],
 	},
+	{
+		title: "Amistad",
+		links: [
+			{ title: "Mensajes de amistad", href: "" },
+			{ title: "Mensajes de ánimo y apoyo", href: "" },
+		],
+	},
 ]
 
 export default landingNav
