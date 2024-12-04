@@ -1,7 +1,7 @@
 ---
 import Layout from "@/layouts/BaseLayout.astro"
 
-import landingNav from "@/content/landing/index.ts"
+import landingNav from "@/content/landing/index"
 ---
 
 <Layout title="Pasamelo">
@@ -11,7 +11,7 @@ import landingNav from "@/content/landing/index.ts"
 				landingNav.map((item, index) => (
 					<div class="card">
 						<h3 class="card__heading">{item.title}</h3>
-						<p class="card__content landing__nav nav nav--button">
+						<p class="card__content landing__nav nav nav--toggle">
 							{item.links.map((link, index) => (
 								<a href={link.href}>{link.title}</a>
 							))}

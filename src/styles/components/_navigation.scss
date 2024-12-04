@@ -39,4 +39,20 @@
 			}
 		}
 	}
+
+	&--toggle {
+		> a {
+			padding: 0.5rem 1rem;
+			border-radius: $navigation-toggle-border-radius;
+			transition: background-color 0.3s, color 0.3s;
+
+			&:is(:hover, :focus) {
+				background-color: $navigation-toggle-background-color-hover;
+			}
+
+			&:is(:active) {
+				background-color: $navigation-toggle-background-color-active;
+			}
+		}
+	}
 }
