@@ -8,8 +8,8 @@ $enable-media-query-dark-mode: false;
 // Contextual
 $color-text-default: $color-neutral-700;
 $color-background-default: $color-primary-100;
-$color-text-interactive-default: $color-accent-400;
-$color-text-interactive-hover: $color-accent-500;
+$color-text-interactive-default: $color-accent-900;
+$color-text-interactive-hover: $color-accent-600;
 
 // set to 0 to disable
 $letter-spacing-loose: 0;
@@ -77,6 +77,8 @@ $site-header-margin: 0;
 $site-header-jusitifcation-small-screens: center;
 $site-header-jusitifcation-large-screens: space-between;
 $site-header-alignment: center;
+$site-header-logo-width: $size-8;
+$site-header-logo-height: $size-8;
 
 // // skip navigation
 $skip-nav-color: $color-neutral-100;
@@ -97,7 +99,7 @@ $navigation-font-family: $body-font-family;
 $navigation-font-weight: $body-font-weight;
 
 // site footer
-$footer-background-color: $color-primary-300;
+$footer-background-color: $color-primary-100;
 $footer-text-color: $color-primary-900;
 $footer-link-color: $color-neutral-100;
 $footer-link-color-hover: $color-primary-200;

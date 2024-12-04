@@ -1,49 +1,24 @@
 ---
 import Layout from "@/layouts/BaseLayout.astro"
+
+import landingNav from "@/content/landing/index.ts"
 ---
 
-<Layout title="Let's get to work">
+<Layout title="Pasamelo">
 	<div class="container flow">
-		<h1 class="heading-1">Let's go</h1>
-		<h2 class="heading-2">Subtitle</h2>
-		<h3 class="heading-3">Sub-subtitle</h3>
-		<h4 class="heading-4">Sub-sub-subtitle</h4>
-		<h5 class="heading-5">Sub-sub-sub-subtitle</h5>
-		<h6 class="heading-6">Sub-sub-sub-sub-subtitle</h6>
-
-		<div class="card">
-			<header class="card__heading">
-				<h2 class="heading-2">Card title</h2>
-			</header>
-			<p class="card__content">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-				doloribus harum quam adipisci rerum. Illo, optio quis odio blanditiis,
-				aut nostrum ipsum hic vel, vero quasi quidem aliquid! Perferendis, sit.
-			</p>
-
-			<footer class="card__footer">
-				<button class="button" data-type="primary">hola</button>
-			</footer>
+		<div class="even-columns">
+			{
+				landingNav.map((item, index) => (
+					<div class="card">
+						<h3 class="card__heading">{item.title}</h3>
+						<p class="card__content landing__nav">
+							{item.links.map((link, index) => (
+								<a href={link.href}>{link.title}</a>
+							))}
+						</p>
+					</div>
+				))
+			}
 		</div>
-		<p>
-			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum nulla
-			repellendus dolore quam quas? Nisi eaque veniam dolorem enim. Odit
-			incidunt nisi dignissimos facilis perspiciatis quidem accusantium at
-			consectetur minus.
-		</p>
-
-		<p>
-			Aperiam non nulla recusandae totam atque officia debitis tenetur, natus
-			veritatis eius perferendis libero earum voluptatum doloremque dignissimos,
-			ut laborum illum eligendi autem ipsa quaerat. Dolorum consequatur ipsum
-			harum ut
-		</p>
-
-		<p>
-			Dolore molestias et esse neque beatae atque. Quas necessitatibus,
-			quibusdam est vero neque corporis doloremque consectetur error, dicta
-			animi commodi! Accusamus distinctio dolor eligendi sint repudiandae
-			sapiente adipisci nemo doloribus?
-		</p>
 	</div>
 </Layout>

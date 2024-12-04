@@ -3,7 +3,7 @@
 .card {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	gap: $card-flow-spacing;
