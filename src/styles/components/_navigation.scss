@@ -1,26 +1,42 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .nav {
-  --flex-column-gap: #{$navigation-gap};
-  list-style: none;
-  font-family: $navigation-font-family;
-  font-weight: $navigation-font-weight;
+	--flex-column-gap: #{$navigation-gap};
+	list-style: none;
+	font-family: $navigation-font-family;
+	font-weight: $navigation-font-weight;
 
-  li {
-    min-width: 44px;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-  }
+	li {
+		min-width: 44px;
+		min-height: 44px;
+		display: flex;
+		align-items: center;
+	}
 
-  a {
-    color: $navigation-color;
-    text-decoration: $navigation-link-text-decoration;
-    display: inline-flex;
-    align-items: center;
+	a {
+		color: $navigation-color;
+		text-decoration: $navigation-link-text-decoration;
+		display: inline-flex;
+		align-items: center;
 
-    &:is(:hover, :focus) {
-      color: $navigation-color-hover;
-    }
-  }
+		&:is(:hover, :focus) {
+			color: $navigation-color-hover;
+		}
+	}
+
+	&--button {
+		> a {
+			padding: 0.5rem 1rem;
+			border-radius: $navigation-button-border-radius;
+			transition: background-color 0.3s, color 0.3s;
+
+			&:is(:hover, :focus) {
+				background-color: $navigation-button-background-color-hover;
+			}
+
+			&:is(:active) {
+				background-color: $navigation-button-background-color-hover;
+			}
+		}
+	}
 }

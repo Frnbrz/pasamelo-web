@@ -11,7 +11,7 @@ import landingNav from "@/content/landing/index.ts"
 				landingNav.map((item, index) => (
 					<div class="card">
 						<h3 class="card__heading">{item.title}</h3>
-						<p class="card__content landing__nav">
+						<p class="card__content landing__nav nav nav--button">
 							{item.links.map((link, index) => (
 								<a href={link.href}>{link.title}</a>
 							))}
