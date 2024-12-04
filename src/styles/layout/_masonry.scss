@@ -1,0 +1,24 @@
+@use "../abstracts/" as *;
+
+.masonry {
+	max-width: 100%;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-auto-rows: max-content; // Altura dinámica basada en el contenido
+	grid-auto-flow: dense;
+
+	div {
+		aspect-ratio: 1; // Mantiene una proporción cuadrada
+	}
+
+	&--vertical {
+		grid-row: span 2;
+		aspect-ratio: 0.5; // Proporción personalizada
+	}
+
+	&--horizontal {
+		grid-column: span 1;
+		aspect-ratio: 2; // Proporción horizontal
+	}
+}

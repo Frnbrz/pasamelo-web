@@ -1,0 +1,29 @@
+---
+import Layout from "@/layouts/BaseLayout.astro"
+
+import landingNav from "@/content/landing/index"
+---
+
+<Layout title="Pasamelo">
+	<div class="container flow">
+		<div class="search-bar">
+			<input type="text" id="search-input" placeholder="Buscar texto..." />
+			<button class="button" id="button" data-type="primary" type="submit">
+				Search
+			</button>
+		</div>
+	</div>
+</Layout>
+
+<script>
+	const searchInput = document.querySelector(
+		"#search-input",
+	) as HTMLInputElement | null
+	const searchButton = document.querySelector(".button")
+
+	if (searchButton && searchInput) {
+		searchButton.addEventListener("click", () => {
+			console.log(searchInput.value)
+		})
+	}
+</script>
