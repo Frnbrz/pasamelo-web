@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets"
 import PrimaryNavigation from "./PrimaryNavigation.astro"
-import SiteMenu from "./SiteMenu.astro"
 const { skipTo = "#main" } = Astro.props
 ---
 
@@ -10,7 +9,6 @@ const { skipTo = "#main" } = Astro.props
 
 	<div class="container">
 		<div class="site-header__inner">
-			<!-- <SiteMenu /> -->
 			<a href="/">
 				<Image
 					width={144}
@@ -22,7 +20,7 @@ const { skipTo = "#main" } = Astro.props
 				/>
 				<p class="visually-hidden">NAME_OF_SITE</p>
 			</a>
-			<!-- <PrimaryNavigation /> -->
+			<PrimaryNavigation />
 		</div>
 	</div>
 </header>
